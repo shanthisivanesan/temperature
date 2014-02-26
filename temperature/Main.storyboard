@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2NG-nd-HXb">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="IHD-xP-QeP">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="2NG-nd-HXb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="98F-My-3UJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OfL-F3-wds" kind="relationship" relationship="rootViewController" id="M82-ZG-1zD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mSk-6O-F6Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-335" y="-114"/>
+        </scene>
+        <!--TemperatureVC - Temperature Converter-->
+        <scene sceneID="q3h-19-ihT">
+            <objects>
+                <viewController id="OfL-F3-wds" customClass="TemperatureVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="We2-gf-NfE"/>
+                        <viewControllerLayoutGuide type="bottom" id="bbI-1h-glg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oBt-hB-8fU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Fahrenheit" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUh-4T-TmS">
+                                <rect key="frame" x="63" y="220" width="113" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="HKX-Iu-Y1G"/>
+                                    <constraint firstAttribute="width" constant="81" id="iUs-VG-5vI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.23366732230000001" green="0.72353054169999997" blue="0.75" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="=" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xee-Gx-6ax">
+                                <rect key="frame" x="167" y="179" width="24" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="24" id="DpI-6E-KTY"/>
+                                    <constraint firstAttribute="width" constant="24" id="TNS-T6-3uv"/>
+                                    <constraint firstAttribute="height" constant="21" id="ltB-BH-87P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="32" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AsK-my-CwA">
+                                <rect key="frame" x="63" y="176" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="UWd-xW-juu"/>
+                                    <constraint firstAttribute="height" constant="30" id="uK0-sb-9g1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eBl-Ez-ari">
+                                <rect key="frame" x="191" y="176" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZhG-Xj-ri5"/>
+                                    <constraint firstAttribute="width" constant="97" id="p64-M2-tMn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Celsius" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IH1-a0-a7y">
+                                <rect key="frame" x="191" y="220" width="91" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="S3n-xV-Oc9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="cu7-lR-m6r"/>
+                                    <constraint firstAttribute="height" constant="21" id="ihv-on-D4c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="0.23366732230000001" green="0.72353054169999997" blue="0.75" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xee-Gx-6ax" firstAttribute="leading" secondItem="AsK-my-CwA" secondAttribute="trailing" constant="7" id="5Cr-LG-D9V"/>
+                            <constraint firstItem="PUh-4T-TmS" firstAttribute="top" secondItem="AsK-my-CwA" secondAttribute="bottom" constant="14" id="GYp-6s-JiD"/>
+                            <constraint firstItem="eBl-Ez-ari" firstAttribute="baseline" secondItem="Xee-Gx-6ax" secondAttribute="baseline" constant="7" id="aIM-9W-Owc"/>
+                            <constraint firstItem="Xee-Gx-6ax" firstAttribute="baseline" secondItem="AsK-my-CwA" secondAttribute="baseline" constant="-7" id="beY-fz-42Z"/>
+                            <constraint firstItem="PUh-4T-TmS" firstAttribute="leading" secondItem="AsK-my-CwA" secondAttribute="leading" id="fg9-ji-Cq0"/>
+                            <constraint firstItem="IH1-a0-a7y" firstAttribute="baseline" secondItem="PUh-4T-TmS" secondAttribute="baseline" id="sB6-UU-zwJ"/>
+                            <constraint firstItem="eBl-Ez-ari" firstAttribute="leading" secondItem="Xee-Gx-6ax" secondAttribute="trailing" id="u9k-DQ-lo4"/>
+                            <constraint firstItem="eBl-Ez-ari" firstAttribute="leading" secondItem="IH1-a0-a7y" secondAttribute="leading" id="w4p-vg-ueA"/>
+                            <constraint firstItem="AsK-my-CwA" firstAttribute="top" secondItem="We2-gf-NfE" secondAttribute="bottom" constant="112" id="wRC-cl-8vr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Temperature Converter" id="Tau-d1-Kxv"/>
+                    <connections>
+                        <outlet property="celsiusTextField" destination="eBl-Ez-ari" id="n85-Vu-ofG"/>
+                        <outlet property="fahrenheitTextField" destination="AsK-my-CwA" id="x0N-xs-8J8"/>
+                        <outlet property="topMarginConstraint" destination="wRC-cl-8vr" id="xVA-U9-X7C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KoV-1r-scj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23" y="-119"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
